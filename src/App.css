@@ -75,15 +75,11 @@
 }
 
 .content-404{
-  display: flex;
-  margin: 30% 0;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 20% 0; 
 }
 
 #run-emulator{
-  margin: 5px;
+  margin: 10px;
 }
 
 .link-item{
@@ -96,4 +92,32 @@
 .link-item:hover{
   border-radius: 5px;
   background-color: #ebebeb;
+}
+
+.redirect-button{
+  padding: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.redirect-button:hover {
+  border-color: #646cff;
+}
+.redirect-button:focus,
+.redirect-button:focus-visible {
+  outline: -webkit-focus-ring-color solid 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  .redirect-button{
+    background-color: #e7e7e7;
+  }
 }

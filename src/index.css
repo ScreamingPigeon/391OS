@@ -34,6 +34,7 @@ a:hover {
 
 body {
   display: flex;
+  width: auto;
   margin: 0;
   background-color: #f6f7f8;
   padding-top: 40px;
@@ -62,7 +63,7 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: -webkit-focus-ring-color auto 4px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -75,6 +76,9 @@ button:focus-visible {
   }
   button {
     background-color: #e7e7e7;
+  }
+  button:active{
+    background-color: #e0e0e0;
   }
 }
 
