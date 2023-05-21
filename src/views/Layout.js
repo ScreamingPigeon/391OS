@@ -3,23 +3,29 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
     return (
       <>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/demo">Demo</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-  
+        <div className="nav-header">
+          <div className="nav-item">
+            <Link to="/">
+              <div className="link-item">Home</div>
+            </Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/demo">
+              <div className="link-item">Demo</div>
+            </Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/about">
+              <div className="link-item">About</div>
+            </Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/contact">
+              <div className="link-item">Contact</div>
+            </Link>
+          </div>
+        </div>
+      
         <Outlet />
       </>
     )

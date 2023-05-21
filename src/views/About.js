@@ -1,5 +1,5 @@
 const About = () => {
-    return (<div>
+    return (<div className="content-container">
         <h1>About</h1>
     </div>);
 }
