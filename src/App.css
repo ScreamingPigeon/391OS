@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: "Web IBM VGA 8x16";
+  src: url("./emulatorFiles/web_ibm_vga_8x16.woff") format("woff");
+}
+
+.emulator_text
+{
+  white-space: pre;
+  font-family: "Web IBM VGA 8x16";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+}
