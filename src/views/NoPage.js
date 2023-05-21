@@ -1,7 +1,7 @@
 const NoPage = () => {
-    <div className="content-container">
+    return(<div className="content-404">
         <h1>OOPS! Nothing is here!</h1>
-    </div>
+    </div>);
 }
 
 export default NoPage;

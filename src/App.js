@@ -7,10 +7,9 @@ import About from './views/About';
 import NoPage from "./views/NoPage";
 import './App.css';
 
-
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -22,7 +21,9 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    </div>
+    </>
   );
 }
 export default App;
+
+

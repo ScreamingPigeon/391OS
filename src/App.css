@@ -1,62 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@font-face {
-  font-family: "Web IBM VGA 8x16";
-  src: url("./emulatorFiles/web_ibm_vga_8x16.woff") format("woff");
-}
-
-.emulator_text
-{
-  white-space: pre;
-  font-family: "Web IBM VGA 8x16";
-  font-style: normal;
-  font-size: 20px;
-  line-height: 20px;
-}
-
 #root {
   width: 100%;
   min-width: 840px;
   margin: 0;
   text-align: center;
+  background: inherit;
 }
 
 .logo {
@@ -125,6 +72,14 @@
 .content-container{
   margin-top: 20px;
   padding: 1rem;
+}
+
+.content-404{
+  display: flex;
+  margin: 30% 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #run-emulator{
