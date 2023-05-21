@@ -20,7 +20,7 @@ const activate = (biosURL, vgaURL, hdaURL, wasmPath) =>{
     });
   }
 
-const EmulatorContainer = ({biosURL, vgaURL, hdaURL, wasmPath}) => {    
+const V86Container = ({biosURL, vgaURL, hdaURL, wasmPath}) => {    
     return <div>
         <div>
           <button id="run-emulator" onClick={()=>activate(biosURL, vgaURL, hdaURL, wasmPath)}> Run </button>
@@ -33,11 +33,11 @@ const EmulatorContainer = ({biosURL, vgaURL, hdaURL, wasmPath}) => {
 };
 
 // prop checking
-EmulatorContainer.propTypes = {
+V86Container.propTypes = {
     biosURL: PropTypes.string,
     vgaURL: PropTypes.string,
     hdaURL: PropTypes.string,
     wasmPath: PropTypes.string
 }
 
-export default EmulatorContainer;
+export default V86Container;

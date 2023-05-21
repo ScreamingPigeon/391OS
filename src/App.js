@@ -4,6 +4,7 @@ import Home from './views/Home';
 import Demo from './views/Demo';
 import Contact from './views/Contact';
 import About from './views/About';
+import NoPage from "./views/NoPage";
 import './App.css';
 
 
@@ -24,9 +25,4 @@ function App() {
     </div>
   );
 }
-export default App;
-
-
-const NoPage = () => {
-  return <h1>404</h1>;
-};
+export default App;xs
