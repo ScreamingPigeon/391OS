@@ -9,6 +9,8 @@ const Demo = () => {
         <div className="demo-box">
             <div className="tips-area">
                 <div className="page-title">Online Demo</div>
+                <div className='image-holder'>
+                </div>
                 <div>This is an online demo of 391OS.</div>
                 <div>Click "Run" to start the emulator, "Stop" to end the program </div>
                 <div>You can read the tips below before you start</div>
