@@ -8,7 +8,7 @@ code {
   line-height: 1.5;
   font-weight: 400;
   
-  color-scheme: light;
+  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -79,6 +79,24 @@ button:focus-visible {
     background-color: #e0e0e0;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  button{
+    box-shadow: 0 0 10px 2px rgb(212, 212, 212);
+  }
+  button:hover{
+    border-color: white;
+  }
+  button:active{
+    box-shadow: none;
+  }
+  button:hover,
+  button:focus,
+  button:focus-visible {
+    outline: rgb(206, 206, 206) solid 1px;
+  }
+}
+
 
 @font-face {
   font-family: "Web IBM VGA 8x16";

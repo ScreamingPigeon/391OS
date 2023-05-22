@@ -79,6 +79,7 @@
 }
 
 .content-404{
+  text-align: center;
   margin: 20% 0; 
 }
 
@@ -99,8 +100,9 @@
 }
 
 .redirect-button{
+  align-self: center;
   padding: 10px;
-  display: inline-block;
+  width: fit-content;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -115,6 +117,7 @@
 .redirect-button:hover {
   border-color: #646cff;
 }
+
 .redirect-button:focus,
 .redirect-button:focus-visible {
   outline: -webkit-focus-ring-color solid 4px;
@@ -162,4 +165,29 @@
 
 .default-box{
   height: 90vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-header{
+    background-color: #1a1a1a;
+    box-shadow: 0 0 5px 1px white;
+  }
+  .link-item{
+    color: rgba(255, 255, 255, 0.87);  
+  }
+  .demo-box{
+    background: inherit;
+    box-shadow: 0 0 10px 2px rgb(212, 212, 212);
+  }
+  .redirect-button{
+    box-shadow: 0 0 10px 2px rgb(212, 212, 212);
+  }
+  .redirect-button > a {
+    color: rgba(255, 255, 255, 0.87);
+  }
+  .link-item:hover{
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 0 0 10px 2px rgb(212, 212, 212);
+  }
 }
