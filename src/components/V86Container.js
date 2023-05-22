@@ -34,8 +34,8 @@ const V86Container = ({biosURL, vgaURL, hdaURL, wasmPath}) => {
       navigate(0);
     }
 
-    return <div>
-        <div>
+    return (<>
+        <div className="control-panel">
           <button id="run-emulator" onClick={()=>activate()}> Run </button>
           <button id="stop-emulator" onClick={()=>stopRun()}> Stop </button>
         </div>
@@ -43,7 +43,7 @@ const V86Container = ({biosURL, vgaURL, hdaURL, wasmPath}) => {
           <div className="emulator_text"></div>
           <canvas style={{display: "none"}}></canvas>
         </div>
-    </div>
+    </>);
 };
 
 // prop checking
