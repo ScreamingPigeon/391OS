@@ -12,7 +12,7 @@ const Demo = () => {
                 <div className='image-holder'>
                 </div>
                 <div>This is an online demo of 391OS.</div>
-                <div>Click "Run" to start the emulator, "Stop" to end the program </div>
+                <div>Click "Run" to start the emulator, "Stop" to end the emulator </div>
                 <div>You can read the tips below before you start</div>
             </div>
             <V86Container biosURL={bios} vgaURL={vgabios} hdaURL={mp3} wasmPath={v86wasm}/>
