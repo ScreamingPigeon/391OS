@@ -26,7 +26,7 @@ const Demo = () => {
                 <ul>
                     <li>If you do not see the prompt 391OS, press "Enter" </li>
                     <li>Because it does not have signal implemented, some terminal key combinations, eg "Ctrl+C", will not work</li>
-                    <li>You can run up to 8 process </li>
+                    <li>You can run up to 6 processes </li>
                     <li>Type "exit" to end shell program, but you cannot end the base shell program in each terminal</li>     
                     <li>Pingpong is not a stoppable program. If you want to stop it, use the "Stop" button on the top</li>  
                     <li>Current supported program: ls, cat, grep, pingpong, fish, counter</li>  
