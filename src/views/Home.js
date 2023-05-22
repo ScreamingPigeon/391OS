@@ -1,6 +1,8 @@
 const Home = () => {
     return (<div className="content-container"> 
-        <h2>Home</h2>
+        <div className="default-box">
+            <h2>Home</h2>      
+        </div>
     </div>);
 };
 

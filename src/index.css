@@ -34,11 +34,11 @@ a:hover {
 
 body {
   display: flex;
-  width: auto;
-  margin: 0;
+  width: 100%;
   background-color: #f6f7f8;
+  margin: 0;
   padding-top: 40px;
-  min-width: 320px;
+  min-width: 840px;
   min-height: 100vh;
 }
 
@@ -96,3 +96,9 @@ button:focus-visible {
   line-height: 20px;
 }
 
+.page-foot{
+  position: relative;
+  bottom: 0;
+  padding: 1rem;
+  
+}
