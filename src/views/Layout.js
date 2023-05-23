@@ -1,12 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
+import hopeforcpp from "../hopeforcpp.svg";
 
 const Layout = () => {
     return (
       <>
         <div className="nav-header">
-          <div className="nav-item">
+          <div className="nav-item home-logo-outer">
             <Link to="/">
-              <div className="link-item" >Home</div>
+              <img src={hopeforcpp} className='home-logo' alt="hope for a cpp team logo" />
             </Link>
           </div>
           <div className="nav-item">

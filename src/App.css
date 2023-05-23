@@ -53,6 +53,7 @@
   display: flex;
   background-color: rgb(255, 255, 255);
   overflow: auto;
+  gap: 5px;
   z-index: 10;
   box-shadow: 0 1px 5px 1px rgb(183, 183, 183);
 }
@@ -72,8 +73,8 @@
 }
 
 .content-container{
-  margin-top: 20px;
-  padding: 1rem;
+  margin-top: 25px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -87,10 +88,21 @@
   margin: 10px;
 }
 
+.home-logo-outer{
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.home-logo{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
 .link-item{
+  font-size: 20px;
   width: fit-content;
   padding: 5px 10px;
-  height: 100%;
+  height: fit-content;
   transition-duration: 0.5s;
 }
 
