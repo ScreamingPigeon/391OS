@@ -210,6 +210,25 @@
   }
 }
 
-.emulator_text > div{
-  max-width: 100px;
+
+/* Home page styling starts */
+
+.home-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+#homepage-large-logo{
+  width: 144px;
+}
+
+#homepage-description{
+  /* width: 100%; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Home page styling ends */
