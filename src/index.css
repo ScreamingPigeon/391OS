@@ -24,7 +24,8 @@ code {
 }
 
 a {
-  font-weight: 500;
+  height: fit-content;
+  font-weight: 600;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -112,9 +113,63 @@ button:focus-visible {
   line-height: 20px;
 }
 
+.main-body{
+  width: 100%;
+  padding-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .page-foot{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 1rem 2rem;
   bottom: 0;
-  padding: 1rem;
+  width: 100%;
+  border-top: 1px solid rgb(210, 210, 210);
+  overflow: auto;
+}
+
+.footer-logo{
+  width: 32px;
+  place-self: center;
+  height: auto;
+}
+
+.foot-note-one{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+}
+
+.creator-section{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+#author{
+  color: black;
+}
+
+#author:hover{
+  text-decoration:underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-foot{
+    border-color: #fff;
+  }
+  #author,
+  .foot-note-one,
+  .creator-section{
+    color: rgba(255, 255, 255, 0.90);
+  }
   
 }

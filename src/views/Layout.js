@@ -6,7 +6,7 @@ const Layout = () => {
       <>
         <div className="nav-header">
           <div className="nav-item home-logo-outer">
-            <Link to="/">
+            <Link to="/" className="home">
               <img src={hopeforcpp} className='home-logo' alt="hope for a cpp team logo" />
             </Link>
           </div>
