@@ -15,9 +15,11 @@ const Contact = () => {
     });
     
     return (<div className="content-container">
-        <h2>Contact</h2>
-        <div className="contact-cards-container">
-            {cards}
+        <div id='contact-box'>
+            <div id='contact-page-title'>Contact</div>
+            <div className="contact-cards-container">
+                {cards}
+            </div>
         </div>
     </div>)
 }

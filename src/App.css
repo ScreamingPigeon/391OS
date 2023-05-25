@@ -236,11 +236,18 @@
 
 /* Home page styling ends */
 
-
-
 /* Contact Styling starts */
 
+#contact-box{
+  margin-top: -15px;
+}
 
+#contact-page-title{
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+}
 .contact-cards-container{
   display: grid;
   grid-template: auto / repeat(2, 1fr); 
