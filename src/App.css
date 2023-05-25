@@ -75,8 +75,9 @@
 }
 
 .content-container{
-  margin-top: 25px;
+  margin-top: 1rem;
   padding: 2rem;
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -98,8 +99,8 @@
 }
 
 .home-logo{
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   padding: 0;
   line-height: 0;
 }
@@ -109,7 +110,7 @@
 }
 
 .link-item{
-  font-size: 16px;
+  font-size: 15px;
   width: fit-content;
   padding: 5px 7.5px;
   transition-duration: 0.5s;
@@ -153,7 +154,6 @@
 .tips-area{
   margin: 8px 0;
   padding: 10px;
-  /* width: 700px; */
   text-align: left;
 }
 
@@ -169,6 +169,7 @@
   padding: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   box-shadow: 4px 4px 10px 2px rgb(120, 120, 120);
   background-color: #fdfdfd;
@@ -178,11 +179,6 @@
   margin: 5px 0;
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.contact-cards{
-  display: grid;
-  grid-template: auto / repeat(2, 1fr); 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -218,10 +214,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+#homepage-welcome{
+  margin: 5px;
+  font-size: 32px;
 }
 
 #homepage-large-logo{
-  width: 144px;
+  width: 132px;
 }
 
 #homepage-description{
@@ -229,6 +231,32 @@
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 18px;
 }
 
 /* Home page styling ends */
+
+
+
+/* Contact Styling starts */
+
+
+.contact-cards-container{
+  display: grid;
+  grid-template: auto / repeat(2, 1fr); 
+  gap: 20px;
+}
+
+.contact-card{
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 4px 4px 10px 2px rgb(170, 170, 170);
+}
+
+@media (prefers-color-scheme: dark) {
+  .contact-card{
+    box-shadow: 0px 0px 10px 1.5px rgba(255, 255, 255, 0.87);
+  }
+}
+
+/* Contact Styling ends */

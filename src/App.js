@@ -33,8 +33,9 @@ function App() {
             </div>
           </section>
           <section className='creator-section'>
-            Designed and developed by <a id="author" href='https://github.com/MeanPaper'>MeanPaper</a> for the "good" memory from ECE 391
+            Designed and developed by <a id="author" href='https://github.com/MeanPaper' target="_black">MeanPaper</a> for the "good" memory from ECE 391
           </section>
+          <div style={{display: 'none'}}> {new Date().getFullYear()} &copy; MeanPaper </div>
         </div>
       </footer>
     </>
