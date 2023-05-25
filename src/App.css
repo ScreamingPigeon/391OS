@@ -46,7 +46,8 @@
 }
 
 .nav-header{
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   padding: 0 1rem;
   margin: 0;
   width: 100%;
@@ -226,13 +227,41 @@
   width: 132px;
 }
 
-#homepage-description{
-  /* width: 100%; */
+/* #homepage-description{
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+} */
+
+.carousel-container {
+  margin: 10px 0;
   text-align: center;
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
 }
+
+.carousel-item {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@keyframes breathing-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 /* Home page styling ends */
 
@@ -267,3 +296,9 @@
 }
 
 /* Contact Styling ends */
+
+
+
+
+
+
