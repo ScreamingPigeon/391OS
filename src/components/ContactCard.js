@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types'
 
-const profilePicStyle = {borderRadius: '50%', border: '1px solid black', width: '32px', height: '32px', objectFit: 'cover'};
-
 // use to generate the links and logos for the social media
 const SocialMediaSection = ({socialMedias}) => {
     const socialMediaList = Object.keys(socialMedias);
@@ -26,10 +24,12 @@ const SocialMediaSection = ({socialMedias}) => {
 const ContactCard = ({person}) => {
 
     return (<div className='contact-card'>
-        <img className='profile-picture' style={profilePicStyle} src={person.profilePic} alt={`${person.name}'s profile pic`} />
-        <div>{person.name}</div>
-        <div>{person.email}</div>
-        {Object.keys(person).includes('socialMedias') && <SocialMediaSection socialMedias={person.socialMedias}/>}
+        <img className='profile-picture' src={person.profilePic} alt={`${person.name}'s profile pic`} />
+        <div className='profile-info'>
+            <div id='person-name'>{person.name}</div>
+            <div id='person-email'>{person.email}</div>
+            {Object.keys(person).includes('socialMedias') && <SocialMediaSection socialMedias={person.socialMedias}/>}
+        </div>
     </div>);
 }
 

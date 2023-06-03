@@ -11,7 +11,7 @@ const carouselItems = ['We are team Hope for a Cpp',
 
 const BreathingCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const timeInMs = 6000; 
+    const timeInMs = 5000; 
     const animationStyle = { animation: `breathing-animation ${timeInMs / 1000}s infinite`};
 
     useEffect(() => {
@@ -37,6 +37,7 @@ const Home = () => {
             <img id='homepage-large-logo' src={logo} alt='hope for a cpp logo' />
             <BreathingCarousel />
             <div className='road-map'> Road map </div>
+            <div> {"website is under construction :)"} </div>
         </div>
     </div>);
 };
