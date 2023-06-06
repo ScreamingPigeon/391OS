@@ -27,9 +27,9 @@ function App() {
       <footer className="page-foot">
         <div>
           <section className='foot-note-one'>
-            <img className="footer-logo" src={hopeforcpp} alt="hope for cpp logo"/>
+            <img className="footer-logo" src={hopeforcpp} alt="hope for c++ logo"/>
             <div>
-              Hope for a Cpp
+              Hope for a C++
             </div>
           </section>
           <section className='creator-section'>

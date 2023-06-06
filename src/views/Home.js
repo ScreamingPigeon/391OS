@@ -1,10 +1,10 @@
 import logo from '../hopeforcpp.svg'
 import { useState, useEffect } from 'react';
 
-const carouselItems = ['We are team Hope for a Cpp', 
+const carouselItems = ['We are team Hope for a C++', 
                               'A team from Fall 2022 of ECE 391', 
-                              'A team of people who know how to use Cpp but forgot how to use C ',
-                              'That is why we Hope for a Cpp',
+                              'A team of people who know how to use C++ but forgot how to use C ',
+                              'That is why we Hope for a C++',
                               'Yet, we made it to the end and created this simple Linux OS',
                               '391OS'
                             ];
@@ -34,9 +34,16 @@ const Home = () => {
     return (<div className="content-container"> 
         <div className="home-box">
             <div id='homepage-welcome'> Welcome </div>
-            <img id='homepage-large-logo' src={logo} alt='hope for a cpp logo' />
+            <img id='homepage-large-logo' src={logo} alt='hope for a c++ logo' />
             <BreathingCarousel />
-            <div className='road-map'> Road map </div>
+            <div className='road-map'> 
+                Road map 
+                <div>Checkpoint 1</div>
+                <div>Checkpoint 2</div>
+                <div>Checkpoint 3</div>
+                <div>Checkpoint 4</div>
+                <div>Checkpoint 5</div>
+            </div>
             <div> {"website is under construction :)"} </div>
         </div>
     </div>);

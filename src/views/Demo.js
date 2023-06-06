@@ -12,26 +12,30 @@ const Demo = () => {
                 <div className='image-holder'>
                 </div>
                 <div>This is an online demo of 391OS.</div>
-                <div>Click "Run" to start the emulator, "Stop" to end the emulator </div>
-                <div>You can read the tips below before you start</div>
+                <div>For a better experience, we suggest opening this demo on a computer. </div>
+                <div>Click "Run" to start the emulator, "Stop" to end the emulator. </div>
+                <div>You can read the tips below before you start using the emulator. </div>
             </div>
             <V86Container biosURL={bios} vgaURL={vgabios} hdaURL={mp3} wasmPath={v86wasm}/>
             <div className="tips-area">
-                Helpful Information: 
+                <div>Helpful Information:</div>
                 <ul>
                     <li>Ctrl + L: Clear the screen</li>
                     <li>Alt + F1, F2, F3: Swtich between 3 different terminals</li>
                 </ul>
-                Notes:
+                <div>Notes:</div>
                 <ul>
                     <li>If you do not see the prompt 391OS, press "Enter" </li>
-                    <li>Because it does not have signal implemented, some terminal key combinations, eg "Ctrl+C", will not work</li>
+                    <li>Because it does not have signals implemented, some terminal key combinations, eg "Ctrl+C", will not work</li>
                     <li>You can run up to 6 processes </li>
                     <li>Type "exit" to end shell program, but you cannot end the base shell program in each terminal</li>     
                     <li>Pingpong is not a stoppable program. If you want to stop it, use the "Stop" button on the top</li>  
                     <li>Current supported program: ls, cat, grep, pingpong, fish, counter</li>  
                 </ul>
-
+                <div> The on-screen keyboard functionality is on its way. Stay tuned! {`:)`} </div>
+                <div id='demo-warning'> 
+                    Warning: if you are currently an ECE 391 student, please do not treat the demo as the expected result of your OS.
+                </div>
             </div>
         </div>
     </div>);

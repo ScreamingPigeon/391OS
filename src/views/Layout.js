@@ -19,7 +19,7 @@ const Layout = () => {
       <div className="nav-header">
         <div className="nav-item home-logo-outer">
           <Link to="/" className="home">
-            <img src={hopeforcpp} className='home-logo' alt="hope for a cpp team logo" />
+            <img src={hopeforcpp} className='home-logo' alt="hope for a c++ team logo" />
           </Link>
         </div>
         <div className="nav-item">
