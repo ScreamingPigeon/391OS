@@ -22,7 +22,8 @@ const About = () => {
             <div id='about-page-title'>About</div>
             <div>
                 This is the last MP (machine problem) of the course ECE 391 
-                in Fall 2022 at the University of Illinois Urbana-Champaign.
+                in Fall 2022 at the University of Illinois Urbana-Champaign. <br/>
+                Great thanks to the ECE 391 course staff for their assistance in the development of 391OS.
             </div>
             <div id='about-tech-section'>
                 {/* <h3>391OS Overview</h3> */}
@@ -73,6 +74,9 @@ const WebDevInfo = () => {
                 <h3> Web Developments:</h3>
                 <div> The online emulator is powered by 
                     <a href="https://github.com/copy/v86" target="_blank" rel='noreferrer'> v86</a>.
+                </div>
+                <div> The old-school font used by the emulator is found on
+                    <a href='https://int10h.org/oldschool-pc-fonts/' target='_blank' rel='noreferrer'> int10h.org</a>.
                 </div>
                 <div> The website is developed with 
                     <a href='https://react.dev/' target="_blank" rel='noreferrer'> ReactJS</a>.
