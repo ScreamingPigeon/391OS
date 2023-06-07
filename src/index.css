@@ -38,8 +38,8 @@ body {
   height: 100%;
   margin: 0;
   /* padding-top: 40px; */
-  text-size-adjust: 75%;
-  -webkit-text-size-adjust: 75%;
+  /* text-size-adjust: 75%;
+  -webkit-text-size-adjust: 75%; */
   min-height: 100vh;
 }
 
@@ -108,11 +108,12 @@ button:focus-visible {
 
 .emulator_text
 {
+  display: flex;
   white-space: pre;
   font-family: "Web IBM VGA 8x16";
   font-style: normal;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 19px;
 }
 
 .main-body{
