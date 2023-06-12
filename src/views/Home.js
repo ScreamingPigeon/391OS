@@ -1,48 +1,31 @@
 import logo from '../hopeforcpp.svg'
-import { useState, useEffect } from 'react';
+import BreathingCarousel from '../components/Carousels';
+import CheckpointSlide from '../components/CheckpointSlide';
 
-const carouselItems = ['We are team Hope for a C++', 
-                              'A team from Fall 2022 of ECE 391', 
-                              'A team of people who know how to use C++ but forgot how to use C ',
-                              'That is why we Hope for a C++',
-                              'Yet, we made it to the end and created this simple Linux OS',
-                              '391OS'
-                            ];
 
-const BreathingCarousel = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const timeInMs = 5000; 
-    const animationStyle = { animation: `breathing-animation ${timeInMs / 1000}s infinite`};
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-        }, timeInMs);
-    
-        return () => clearInterval(interval); // Clean up the interval on component unmount
-    }, []);
-    
-    return (
-        <div className="carousel-container">
-            <div className='carousel-item' style={animationStyle}> {carouselItems[activeIndex]}</div>
-        </div>
-    );
-};
+const carouselItems = [ 'We are team Hope for a C++', 
+                        'A team from Fall 2022 of ECE 391', 
+                        'A team of people who know how to use C++ but forgot how to use C ',
+                        'That is why we Hope for a C++',
+                        'Yet, we made it to the end and created this simple Linux OS',
+                        '391OS'
+];
 
 const Home = () => {
-    
+    const tempDate = new Date(2022, 9, 11)
     return (<div className="content-container"> 
         <div className="home-box">
             <div id='homepage-welcome'> Welcome </div>
             <img id='homepage-large-logo' src={logo} alt='hope for a c++ logo' />
-            <BreathingCarousel />
-            <div className='road-map'> 
-                Road map 
-                <div>Checkpoint 1</div>
-                <div>Checkpoint 2</div>
-                <div>Checkpoint 3</div>
-                <div>Checkpoint 4</div>
-                <div>Checkpoint 5</div>
+            <BreathingCarousel carouselItems={carouselItems} breathDuration={5000}/>
+            <div className='road-map'>
+                <div>Road Map</div>
+                <CheckpointSlide 
+                    title="Checkpoint 1"
+                    cpDate={tempDate.toDateString()}
+                    breif="None"
+                />
             </div>
             <div> {"website is under construction :)"} </div>
         </div>

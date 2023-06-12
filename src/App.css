@@ -242,7 +242,7 @@
 }
 
 .carousel-container {
-  margin: 20px 0;
+  margin: 30px 0;
   text-align: center;
   display: flex;
   height: max-content;
@@ -273,6 +273,25 @@
     opacity: 0;
   }
 }
+
+.cp-slide{
+  border: 1px solid black;
+  display: flex;
+  transform: translateX(50%);
+  padding: 10px;
+}
+.cp-timemark{
+  border: 1px solid black;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+}
+.cp-contentbox{
+  border: 1px solid black;
+  margin: 5px;
+}
+
 
 /* Home page styling ends */
 

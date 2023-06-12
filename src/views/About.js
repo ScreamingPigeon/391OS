@@ -1,3 +1,6 @@
+import CheckpointHolder from "../components/CheckpointHolder";
+import cpDataArr from "../checkpoints/CheckpointData"; // this import is problematic, will work temporary, but not for a long term
+
 const helpfulSourceList = [
     {sourceName: 'OSDev', srcLink: 'https://wiki.osdev.org/Expanded_Main_Page'},
     {sourceName: 'ECE 391 MP3 Documents', srcLink: '',},
@@ -29,6 +32,12 @@ const About = () => {
                 {/* <h3>391OS Overview</h3> */}
                 <OsFeatureSection />
                 {/* <div> cp1, cp2, cp3, cp4, cp5 </div> */}
+                <div>
+                    {cpDataArr.map((item, index) => {
+                        return (<CheckpointHolder key={item.title+index} cpData={item}/>)
+                    })}
+                    {/* <CheckpointHolder cpData/> */}
+                </div>
             </div>
             <div id='about-tech-helpful'>
                 <MpHelpfulSources />
@@ -57,8 +66,8 @@ const MpHelpfulSources = () => {
         <ul>
             {helpfulSourceList.map((item, index) => {
                 if (item.srcLink.length === 0)
-                    return (<li key={index + item.source}>{item.sourceName}</li>);
-                return (<li> 
+                    return (<li key={index + item.sourceName}>{item.sourceName}</li>);
+                return (<li key={index + item.sourceName}> 
                     <a href={item.srcLink} target='_blank' rel="noreferrer">{item.sourceName}</a>
                 </li>)
             })}
