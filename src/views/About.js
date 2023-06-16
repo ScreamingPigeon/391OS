@@ -1,6 +1,13 @@
 import CheckpointHolder from "../components/CheckpointHolder";
 import cpDataArr from "../checkpoints/CheckpointData"; // this import is problematic, will work temporary, but not for a long term
 
+// import ReactMarkdown from "react-markdown";
+// import { useEffect, useState } from 'react'
+
+// const mdFileLink = [
+//     "../checkpoints/checkpoint1.md",
+// ]
+
 const helpfulSourceList = [
     {sourceName: 'OSDev', srcLink: 'https://wiki.osdev.org/Expanded_Main_Page'},
     {sourceName: 'ECE 391 MP3 Documents', srcLink: '',},
@@ -19,6 +26,13 @@ const AboutNavigation = () => {
 }
 
 const About = () => {
+    
+    // const [cpContent, setCpContent] = useState('');
+    
+    // useEffect(()=>{
+    //     fetch(mdFileLink[0]).then(res => res.text()).then(text => setCpContent(text))
+    // }, [])
+
     return (<div className="content-container">
         <AboutNavigation />
         <div id='about-box'>
@@ -37,6 +51,7 @@ const About = () => {
                         return (<CheckpointHolder key={item.title+index} cpData={item}/>)
                     })}
                     {/* <CheckpointHolder cpData/> */}
+                    {/* <ReactMarkdown children={cpContent}/> */}
                 </div>
             </div>
             <div id='about-tech-helpful'>

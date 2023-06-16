@@ -7,10 +7,16 @@ const iconClassList = ['github', 'linkedin', 'youtube', 'facebook', 'instagram',
 // use to generate the links and logos for the social media
 const SocialMediaSection = ({socialMedias}) => {
     const socialMediaList = Object.keys(socialMedias);
+    if (socialMediaList.length === 0){
+        return (<></>);
+    }
     const socialMediaAnchors = socialMediaList.map((item, index)=>{
 
         // simple check to see if link string contains http
         let link = socialMedias[item];
+        if(link.length === 0){
+            return (<></>);
+        }
         let hasHttp = link.indexOf('https://')===0 ? true : (link.indexOf('http://')===0 ? true : false);
         link = hasHttp ? link : 'https://'+link;
 

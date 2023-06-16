@@ -8,14 +8,14 @@ const personInfo = [
     { name: 'Dongming Liu', profilePic: meanpaperPic, email: 'ldm1833991255@gmail.com', 
       socialMedias:{github: 'https://github.com/MeanPaper',},
     },
-    { name: 'Elijah Ye', profilePic: reactLogo, email: '123@gmail.com', 
-      socialMedias:{github: 'https://github.com/MeanPaper',},
+    { name: 'Elijah Ye', profilePic: reactLogo, email: 'elijah.gaohan.ye@gmail.com', 
+      socialMedias:{github: '',},
     },
-    { name: 'Owen Xu', profilePic: reactLogo, email: '123@gmail.com', 
-      socialMedias:{github: 'https://github.com/MeanPaper',},
+    { name: 'Owen Xu', profilePic: reactLogo, email: 'jinyuxu2@illinois.edu', 
+      socialMedias:{github: '',},
     },
-    { name: 'Xinyu Wu', profilePic: reactLogo, email: '123@gmail.com', 
-      socialMedias:{github: 'https://github.com/MeanPaper',},
+    { name: 'Xinyu Wu', profilePic: reactLogo, email: 'xinyuwu2@illinois.edu', 
+      socialMedias:{github: '',},
     },
 ];
 
@@ -30,7 +30,7 @@ const Contact = () => {
             <div id='contact-page-title'>Contact</div>
             <div id='contact-page-description'>
               <div> Here are the team members of Hope for a C++. </div>
-              <div> Everyone of us put great effort in building 391OS. </div>
+              <div> Everyone of us puts great effort in building 391OS. </div>
             </div>
             <div className="contact-cards-container">
               {cards}
