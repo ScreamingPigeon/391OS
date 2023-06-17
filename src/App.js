@@ -5,7 +5,7 @@ import Demo from './views/Demo';
 import Contact from './views/Contact';
 import About from './views/About';
 import NoPage from "./views/NoPage";
-import CheckpointHolder from "./components/CheckpointHolder";
+import MarkdownLoader from "./components/MarkdownLoader";
 import hopeforcpp from "./hopeforcpp.svg";
 import './App.css';
 
@@ -25,7 +25,7 @@ function App() {
               <Route path="about">
                 <Route index element={<About />} />
                 {mdFileList.map((item, index)=> {
-                  return <Route key={`${item}-${index}`} path={item} element={<CheckpointHolder markDownPath={`../checkpointMD/${item}.md`}/>}/> 
+                  return <Route key={`${item}-${index}`} path={item} element={<MarkdownLoader markDownPath={`../checkpointMD/${item}.md`}/>}/> 
                 })}
               </Route>
               <Route path="contact" element={<Contact />} />

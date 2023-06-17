@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import PropTypes from "prop-types";
 
 // dynamically loading markdown content
-const CheckpointHolder = ({markDownPath}) => { 
+const MarkdownLoader = ({markDownPath}) => { 
     const [markdownContent, setMarkdownContent] = useState('Hello');
 
     // fetch content from public folder
@@ -23,8 +23,8 @@ const CheckpointHolder = ({markDownPath}) => {
     );
 }
 
-CheckpointHolder.propTypes = {
+MarkdownLoader.propTypes = {
     markDownPath: PropTypes.string.isRequired,
 }
 
-export default CheckpointHolder
+export default MarkdownLoader
