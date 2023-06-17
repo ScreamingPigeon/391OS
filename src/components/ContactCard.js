@@ -15,7 +15,7 @@ const SocialMediaSection = ({socialMedias}) => {
         // simple check to see if link string contains http
         let link = socialMedias[item];
         if(link.length === 0){
-            return (<></>);
+            return (<div key={index + 'none'}></div>);
         }
         let hasHttp = link.indexOf('https://')===0 ? true : (link.indexOf('http://')===0 ? true : false);
         link = hasHttp ? link : 'https://'+link;

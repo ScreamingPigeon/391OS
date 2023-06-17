@@ -48,10 +48,10 @@ const V86Container = ({biosURL, vgaURL, hdaURL, wasmPath}) => {
 
 // prop checking
 V86Container.propTypes = {
-    biosURL: PropTypes.string,
-    vgaURL: PropTypes.string,
-    hdaURL: PropTypes.string,
-    wasmPath: PropTypes.string
+    biosURL: PropTypes.string.isRequired,
+    vgaURL: PropTypes.string.isRequired,
+    hdaURL: PropTypes.string.isRequired,
+    wasmPath: PropTypes.string.isRequired,
 }
 
 export default V86Container;
