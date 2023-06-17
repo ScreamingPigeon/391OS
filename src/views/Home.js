@@ -2,8 +2,6 @@ import logo from '../hopeforcpp.svg'
 import BreathingCarousel from '../components/Carousels';
 import CheckpointSlide from '../components/CheckpointSlide';
 
-
-
 const carouselItems = [ 'We are team Hope for a C++', 
                         'A team from Fall 2022 of ECE 391', 
                         'A team of people who know how to use C++ but forgot how to use C ',

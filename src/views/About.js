@@ -1,12 +1,4 @@
-import CheckpointHolder from "../components/CheckpointHolder";
-import cpDataArr from "../checkpoints/CheckpointData"; // this import is problematic, will work temporary, but not for a long term
-
-// import ReactMarkdown from "react-markdown";
-// import { useEffect, useState } from 'react'
-
-// const mdFileLink = [
-//     "../checkpoints/checkpoint1.md",
-// ]
+import CheckpointLayout from "./CheckpointLayout";
 
 const helpfulSourceList = [
     {sourceName: 'OSDev', srcLink: 'https://wiki.osdev.org/Expanded_Main_Page'},
@@ -27,12 +19,6 @@ const AboutNavigation = () => {
 
 const About = () => {
     
-    // const [cpContent, setCpContent] = useState('');
-    
-    // useEffect(()=>{
-    //     fetch(mdFileLink[0]).then(res => res.text()).then(text => setCpContent(text))
-    // }, [])
-
     return (<div className="content-container">
         <AboutNavigation />
         <div id='about-box'>
@@ -43,16 +29,11 @@ const About = () => {
                 Great thanks to the ECE 391 course staff for their assistance in the development of 391OS.
             </div>
             <div id='about-tech-section'>
-                {/* <h3>391OS Overview</h3> */}
                 <OsFeatureSection />
-                {/* <div> cp1, cp2, cp3, cp4, cp5 </div> */}
-                <div>
-                    {cpDataArr.map((item, index) => {
-                        return (<CheckpointHolder key={item.title+index} cpData={item}/>)
-                    })}
-                    {/* <CheckpointHolder cpData/> */}
-                    {/* <ReactMarkdown children={cpContent}/> */}
-                </div>
+                <h3>Checkpoints</h3>
+                <p>Here are some brief descriptions and explanations for each checkpoint.</p>
+                <CheckpointLayout />
+                {/* <CheckpointHolder markDownPath="../checkpointMD/checkpoint1.md" /> */}
             </div>
             <div id='about-tech-helpful'>
                 <MpHelpfulSources />

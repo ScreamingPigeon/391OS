@@ -5,8 +5,13 @@ import Demo from './views/Demo';
 import Contact from './views/Contact';
 import About from './views/About';
 import NoPage from "./views/NoPage";
+import CheckpointHolder from "./components/CheckpointHolder";
 import hopeforcpp from "./hopeforcpp.svg";
 import './App.css';
+
+// Note: the file location used by the markDownPath is the relative path of the CheckpointHolder element to the md file
+
+const mdFileList = ["checkpoint1", "checkpoint2",  "checkpoint3","checkpoint4","checkpoint5",];
 
 function App() {
   return (
@@ -17,7 +22,12 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="demo" element={<Demo />} />
-              <Route path="about" element={<About />}/>
+              <Route path="about">
+                <Route index element={<About />} />
+                {mdFileList.map((item, index)=> {
+                  return <Route key={`${item}-${index}`} path={item} element={<CheckpointHolder markDownPath={`../checkpointMD/${item}.md`}/>}/> 
+                })}
+              </Route>
               <Route path="contact" element={<Contact />} />
               <Route path="*" element={<NoPage />} />
             </Route>

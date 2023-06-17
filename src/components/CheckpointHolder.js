@@ -1,17 +1,30 @@
-// import cp_one from '../checkpoints/checkpoint1.md';
+import { useEffect, useState } from "react";
+import ReactMarkdown from 'react-markdown';
+import PropTypes from "prop-types";
 
+// dynamically loading markdown content
+const CheckpointHolder = ({markDownPath}) => { 
+    const [markdownContent, setMarkdownContent] = useState('Hello');
 
-// try to see if markdown page can be render correctly
-// used to render markdown pages for the checkpoints
-const CheckpointHolder = ({cpData}) => { 
+    // fetch content from public folder
+    useEffect(()=>{
+        fetch(markDownPath)
+        .then((res) => res.text())
+        .then((text) => setMarkdownContent(text))
+        .catch(error => {
+            console.log('Error fetching markdown', error);
+        })
+    }, [markDownPath]);
+
     return (
-        <>
-            <h3>{cpData.title}</h3>
-            <div>{cpData.brief}</div>
-            <div>{cpData.mainContent}</div>
-        </>
+        <div className='checkpoint-markdowns-container'>
+            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+        </div>
     );
 }
 
+CheckpointHolder.propTypes = {
+    markDownPath: PropTypes.string.isRequired,
+}
 
 export default CheckpointHolder

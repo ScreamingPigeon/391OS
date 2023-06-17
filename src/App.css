@@ -327,6 +327,7 @@
 .contact-card{
   display: flex;
   align-items: center;
+  max-width: 500px;
   flex-basis: 46%;
   padding: 10px;
   margin: 5px;
@@ -446,6 +447,10 @@
   font-size: 28px;
   font-weight: 600;
   margin: 10px 0;
+}
+
+.checkpoint-markdowns-container{
+  padding: 0 5.5rem;
 }
 
 @media screen and (max-width: 500px){
