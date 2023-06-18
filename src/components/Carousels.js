@@ -25,7 +25,4 @@ BreathingCarousel.propTypes={
     breathDuration: PropTypes.number,
 }
 
-
-
-
 export default BreathingCarousel;

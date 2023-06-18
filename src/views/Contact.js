@@ -1,6 +1,5 @@
 import ContactCard from "../components/ContactCard";
 import reactLogo from "../logo.svg"
-
 import meanpaperPic from "../images/meanpaper_avatar.png"
 
 // team member information json object

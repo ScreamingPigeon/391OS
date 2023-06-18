@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-
 const nopagePhrases = [
     "Maybe there is going to be something here in the future :)",
     "Wow, how did you land here?",
     "Are you looking for some treasures?",
     "The time has not come yet.",
-]
+];
+
 const NoPage = () => {
     return(<div className=" content-container content-404">
         <h1>OOPS! Nothing is here!</h1>
