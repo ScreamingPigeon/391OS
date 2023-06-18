@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown';
 import PropTypes from "prop-types";
+import gfm from "remark-gfm"
+import "../markdown.css"
 
 // dynamically loading markdown content
 const MarkdownLoader = ({markDownPath}) => { 
@@ -18,7 +20,7 @@ const MarkdownLoader = ({markDownPath}) => {
 
     return (
         <div className='checkpoint-markdowns-container'>
-            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[gfm]}>{markdownContent}</ReactMarkdown>
         </div>
     );
 }

@@ -32,18 +32,20 @@ For paging, this project uses 4kB page and 4MB page.
     
     The paging scheme is divided into three parts: PDE, PTE, physical memory.
 
+    Convertion order: PDE -> PTE -> Physical memory
+    
+    32 bit virtual address layout:
+
+    |  PDE      |  PTE    | Physical memory offset |
+    | :-----:   | :-----: |   :-----:              |
+    |  10 bits  | 10 bits | 12 bits                |
+
 
 -   For 4MB page:
     
     The paging scheme is divied into two parts: PDE, physical memory.
-
-
-
-
-
-
-
-
+    
+    Convertion order: PDE -> Physical memory
 
 ### Incomplete Device Driver
 

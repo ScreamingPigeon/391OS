@@ -449,10 +449,6 @@
   margin: 10px 0;
 }
 
-.checkpoint-markdowns-container{
-  padding: 0 5.5rem;
-}
-
 @media screen and (max-width: 500px){
   #about-box{
     padding-left: 1rem;
