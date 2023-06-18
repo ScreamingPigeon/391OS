@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 // dynamically loading markdown content
 const MarkdownLoader = ({markDownPath}) => { 
-    const [markdownContent, setMarkdownContent] = useState('Hello');
+    const [markdownContent, setMarkdownContent] = useState('Loading...');
 
     // fetch content from public folder
     useEffect(()=>{
