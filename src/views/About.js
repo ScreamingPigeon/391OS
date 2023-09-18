@@ -31,8 +31,9 @@ const About = () => {
             <div id='about-tech-section'>
                 <OsFeatureSection />
                 <h3>Checkpoints</h3>
-                <p>Here are some brief descriptions and explanations for each checkpoint.</p>
-                <CheckpointLayout />
+                <p>Still working on it... Stay Tuned!</p>
+                {/* <p>Here are some brief descriptions and explanations for each checkpoint.</p>
+                <CheckpointLayout /> */}
                 {/* <CheckpointHolder markDownPath="../checkpointMD/checkpoint1.md" /> */}
             </div>
             <div id='about-tech-helpful'>
