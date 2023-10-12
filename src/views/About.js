@@ -41,6 +41,7 @@ const About = () => {
             </div>
             <div id='about-other-section'>
                 <WebDevInfo />
+
             </div>
         </div>
     </div>);
@@ -98,7 +99,9 @@ const WebDevInfo = () => {
                     <a href="https://vitejs.dev/" target="_blank" rel="noreferrer"> vite </a> (a great tool for React App but it gives some trouble when developing the website).
                 </div>
                 <div>The team/website logo is inspired by the logo of C++. </div>
-                <div>Our team have a thought of updating our OS. Stay Tuned!</div>
+                {/* <div>Our team have a thought of updating our OS. Stay Tuned!</div> */}
+                <div>If you are a student in ECE 391 and have questions, you can come to my office hour and talk to me!</div>
+                <div>My office hour is at 9:00 AM to 12:00 PM every Friday... Sometimes, I will stay a bit longer in my OH :)</div>
             </div>
         </>
     );
