@@ -34,7 +34,9 @@ const Demo = () => {
                 </ul>
                 <div> The on-screen keyboard functionality is on its way. Stay tuned! {`:)`} </div>
                 <div id='demo-warning'> 
-                    Warning: if you are currently an ECE 391 student, please do not treat the demo as the expected result of your OS.
+                    For current ECE 391 students: 
+                        This demo shows most of the expected results.
+                        Depending on the rubric, the results here may be different from yours.
                 </div>
             </div>
         </div>
