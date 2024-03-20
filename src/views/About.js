@@ -101,7 +101,7 @@ const WebDevInfo = () => {
                 <div>The team/website logo is inspired by the logo of C++. </div>
                 {/* <div>Our team have a thought of updating our OS. Stay Tuned!</div> */}
                 <div>If you are a student in ECE 391 and have questions, you can come to my office hour and talk to me!</div>
-                <div>My office hour is at 9:00 AM to 12:00 PM every Friday... Sometimes, I will stay a bit longer in my OH :)</div>
+                <div>My office hour is at 10:00 AM to 12:00 PM every Friday... Sometimes, I will come a bit early and/or stay a bit longer in my OH :)</div>
             </div>
         </>
     );
