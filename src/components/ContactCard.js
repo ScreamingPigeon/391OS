@@ -36,7 +36,7 @@ const ContactCard = ({person, className}) => {
         <img className='profile-picture' src={person.profilePic} alt={`${person.name}'s avatar`} />
         <div className='profile-info'>
             <div className='person-name'>{person.name}</div>
-            <div className='person-email'><i className="bi bi-envelope-fill mail-icon"></i> <i>{person.email}</i> </div>
+            <div className='person-email'><i className="bi bi-envelope-fill mail-icon"></i> <a href={`mailto:${person.email}`}>{person.email}</a> </div>
             {Object.keys(person).includes('socialMedias') && <SocialMediaSection socialMedias={person.socialMedias}/>}
         </div>
     </div>);
