@@ -179,6 +179,7 @@
   width: 100%;
   box-shadow: 4px 4px 10px 2px rgb(120, 120, 120);
   background-color: #fdfdfd;
+  border-radius: 0.5rem;
 }
 
 #demo-warning{
@@ -333,6 +334,7 @@
   margin: 5px;
   box-shadow: 4px 4px 10px 2px rgb(170, 170, 170);
   gap: 10px;
+  border-radius: 0.5rem;
 }
 
 .profile-picture{
