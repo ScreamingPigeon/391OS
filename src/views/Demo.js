@@ -33,11 +33,6 @@ const Demo = () => {
                     <li>Current supported program: ls, cat, grep, pingpong, fish, counter</li>  
                 </ul>
                 <div> The on-screen keyboard functionality is on its way. Stay tuned! {`:)`} </div>
-                <div id='demo-warning'> 
-                    For current ECE 391 students: 
-                        This demo shows most of the expected results.
-                        Depending on the rubric, the results here may be different from yours.
-                </div>
             </div>
         </div>
     </div>);

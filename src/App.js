@@ -19,31 +19,31 @@ function App() {
       <div className="main-body">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="demo" element={<Demo />} />
-              <Route path="about">
-                <Route index element={<About />} />
+            <Route path="/" element={<Demo />}>
+              {/* <Route index element={<Home />} /> */}
+              {/* <Route path="demo" element={<Demo />} /> */}
+              {/* <Route path="about"> */}
+                {/* <Route index element={<About />} />
                 {mdFileList.map((item, index)=> {
                   return <Route key={`${item}-${index}`} path={item} element={<MarkdownLoader markDownPath={`../checkpointMD/${item}.md`}/>}/> 
                 })}
-              </Route>
-              <Route path="contact" element={<Contact />} />
-              <Route path="*" element={<NoPage />} />
+              </Route> */}
+              {/* <Route path="contact" element={<Contact />} /> */}
+              {/* <Route path="*" element={<NoPage />} /> */}
             </Route>
           </Routes>
         </BrowserRouter>
       </div>
       <footer className="page-foot">
         <div>
-          <section className='foot-note-one'>
+          {/* <section className='foot-note-one'>
             <img className="footer-logo" src={hopeforcpp} alt="hope for c++ logo"/>
             <div>
               Hope for a C++
             </div>
-          </section>
+          </section> */}
           <section className='creator-section'>
-            Designed and developed by <a id="author" href='https://github.com/MeanPaper' target="_black">MeanPaper</a> for the "good" memory from ECE 391
+            Website designed and developed by <a id="author" href='https://github.com/MeanPaper' target="_black">MeanPaper</a>. Operating System developed by Group 29 during ECE391 SP24.
           </section>
           <div style={{display: 'none'}}> {new Date().getFullYear()} &copy; MeanPaper </div>
         </div>
